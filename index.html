@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roses Water Calculator</title>
+</head>
+<body>
+    <h2>Roses Water Calculator</h2>
+    <form action="/calculate" method="post">
+        <label for="area">Area of the rose garden (in square meters):</label>
+        <input type="number" id="area" name="area" required><br><br>
+        <label for="weather">Current Weather:</label>
+        <select id="weather" name="weather">
+            <option value="sunny">Sunny</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="rainy">Rainy</option>
+        </select><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
