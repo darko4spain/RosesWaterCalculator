@@ -12,8 +12,7 @@ pip install Flask
 
 Now, here's a simple Python Flask application for your "RosesWaterCalculator":
 
-python
-Copy code
+```
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
@@ -40,12 +39,13 @@ def calculate_water():
 
 if __name__ == '__main__':
     app.run(debug=True)
+```
+
 This code sets up a basic web server. It will show a form to the user where they can enter the area of their rose garden and select the current weather condition. Based on this input, it will calculate the amount of water needed for the roses.
 
 Next, create two HTML files for the UI. First is index.html:
 
-html
-Copy code
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,11 +66,12 @@ Copy code
     </form>
 </body>
 </html>
+```
 
 And result.html:
 
-html
-Copy code
+
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -82,15 +83,17 @@ Copy code
     <a href="/">Go Back</a>
 </body>
 </html>
+ ```
+
 Place these HTML files in a folder named templates within your project directory. This is where Flask looks for HTML templates by default.
 
 Once everything is set up, run your Flask application by executing the Python script. Navigate to http://127.0.0.1:5000/ in your web browser to see the "RosesWaterCalculator" in action.
 
 Finally, create a requirements.txt file with the following content for those who want to run your application:
 
-makefile
-Copy code
+```
 Flask==2.0.1
+```
 You can adjust versions as necessary. This setup provides a basic functioning web application for calculating water needs based on garden area and current weather. You can expand and refine this according to your requirements.
 
 As you know, roses symbolize love and beauty, enchanting gardeners with their sublime blooms and fragrances. However, achieving the perfect bloom involves careful attention and knowledge. Here's your comprehensive guide to nurturing your roses to their fullest potential.
